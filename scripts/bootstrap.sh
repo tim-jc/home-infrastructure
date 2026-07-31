@@ -12,5 +12,5 @@ for step in \
 do
     echo
     echo "==> Running ${step}"
-    "${SCRIPT_DIR}/bootstrap/${step}"
+    "${SCRIPT_DIR}/scripts/bootstrap/${step}"
 done
