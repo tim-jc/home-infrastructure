@@ -108,3 +108,16 @@ and their primary group with mode `750`.
 
 The host is now ready for workload deployment through the repository's separate
 application layer.
+
+## 7. Bootstrap complete
+
+Bootstrap is complete when:
+
+- Raspberry Pi OS is fully updated.
+- Docker Engine, Buildx and Compose are installed.
+- Docker starts automatically at boot.
+- The administrative user can use Docker without sudo.
+- `/srv/services` exists with the canonical directory layout.
+- The verification commands complete successfully.
+
+The host is now ready for application deployment.
