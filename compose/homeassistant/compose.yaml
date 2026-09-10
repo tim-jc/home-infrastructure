@@ -2,9 +2,13 @@ services:
   homeassistant:
     container_name: homeassistant
     image: ghcr.io/home-assistant/home-assistant:stable
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
     volumes:
       - /srv/services/data/homeassistant:/config
       - /etc/localtime:/etc/localtime:ro
+      - /run/dbus:/run/dbus:ro
     restart: unless-stopped
     network_mode: host
     stop_grace_period: 60s
