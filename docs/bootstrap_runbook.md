@@ -1,8 +1,8 @@
 # Bootstrap `home-prod`
 
 Use this runbook to prepare a freshly flashed Raspberry Pi 4 as the `home-prod`
-Docker host. The bootstrap provisions the operating system and host directories
-only; it does not deploy Homebridge or any other workload.
+Docker host. The bootstrap provisions the operating system and generic host
+directories only; it does not deploy Home Assistant or any other workload.
 
 ## 1. Flash Raspberry Pi OS
 
@@ -107,7 +107,8 @@ Docker should be available without `sudo`, its service should be `enabled` and
 and their primary group with mode `750`.
 
 The host is now ready for workload deployment through the repository's separate
-application layer.
+application layer. Home Assistant deployment is documented in
+[`homeassistant.md`](homeassistant.md).
 
 ## 7. Bootstrap complete
 
